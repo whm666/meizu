@@ -1,0 +1,530 @@
+/**********************头部************************/
+#mz-header {
+  position: absolute;
+  height: 90px;
+  width: 1519.2px;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+#mz-header .mz-header-mid {
+  width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+}
+#mz-header .mz-header-mid .mz-header-box {
+  height: 90px;
+  width: 125px;
+  font-size: 14px;
+  float: left;
+}
+#mz-header .mz-header-mid .mz-header-box .mz-header-logo {
+  width: 125px;
+  height: 24px;
+  line-height: 90px;
+}
+#mz-header .mz-header-mid .mz-header-box .mz-header-logo #logo {
+  width: 100%;
+  height: 100%;
+}
+#mz-header .mz-header-mid .mz-header-link {
+  height: 100%;
+  font-size: 14px;
+  float: right;
+}
+#mz-header .mz-header-mid .mz-header-link li {
+  float: left;
+  height: 100%;
+}
+#mz-header .mz-header-mid .mz-header-link li a {
+  display: block;
+  padding: 31px 20px 30px;
+  line-height: 21px;
+  font-size: 14px;
+  transition: color 0.1s linear;
+  color: #fff;
+}
+#mz-header .mz-header-mid .mz-header-search {
+  position: relative;
+  float: right;
+  margin: 26px 5px 0 10px;
+  width: 170px;
+  height: 30px;
+  line-height: 29px;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+#mz-header .mz-header-mid .mz-header-search input {
+  display: block;
+  border: none;
+  padding: 0;
+  outline: 0;
+  width: 127px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+  transition: width 0.5s;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+  background: transparent;
+}
+#mz-header .mz-header-mid .mz-header-search .iconfont {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-size: 14px;
+}
+#mz-header .mz-header-mid .mz-header-user {
+  float: right;
+  padding: 32px 0 0 8px;
+  text-align: right;
+  font-size: 12px;
+  position: relative;
+  z-index: 1050;
+}
+#mz-header .mz-header-mid .mz-header-user a .iconfont {
+  font-size: 20px;
+  color: #fff;
+}
+#mz-header .mz-header-mid .mz-header-cart {
+  position: relative;
+  float: right;
+  margin: 27px 0 0 8px;
+}
+#mz-header .mz-header-mid .mz-header-cart a {
+  width: 29px;
+  height: 29px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  text-indent: 3px;
+  line-height: 10px;
+  background-position-y: center;
+  background: url(../../images/cart2.png) no-repeat;
+  background-size: 100%;
+}
+#mz-header .mz-header-mid .mz-header-cart a em {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c00;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 4px;
+  text-indent: 0;
+}
+/**********************背景************************/
+#mz-bk {
+  height: 100%;
+  background: #f4f4f4;
+  min-width: 1240px;
+  overflow: hidden;
+  width: 1519.2px;
+}
+/**********************轮播图************************/
+#mz-show {
+  position: relative;
+  width: 1519.2px;
+  height: 670px;
+  overflow: hidden;
+}
+#mz-show img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+/**********************广告************************/
+#mz-adv {
+  width: 1519.2px;
+  height: 277px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+#mz-adv ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#mz-adv ul li {
+  float: left;
+  position: relative;
+  width: 25%;
+  padding-top: 45px;
+  height: 186px;
+}
+#mz-adv ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #515151;
+  transition: opacity 0.2s linear;
+  text-decoration: none;
+}
+#mz-adv ul li a:hover {
+  opacity: 0.85;
+}
+#mz-adv ul li a img {
+  display: block;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+#mz-adv ul li a em {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  line-height: 30px;
+}
+#mz-adv ul li a p {
+  font-size: 14px;
+  color: #999;
+  max-height: 100%;
+  line-height: 20px;
+}
+/**********************手机************************/
+#mz-phone {
+  width: 1519.2px;
+  height: 1505px;
+}
+#mz-phone h3 {
+  height: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+#mz-phone .mz-phone-tt {
+  height: 450px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+#mz-phone .mz-phone-tt a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s linear;
+}
+#mz-phone .mz-phone-tt a:hover {
+  opacity: 0.85;
+}
+#mz-phone .mz-phone-tt a img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#mz-phone .mz-phone-box ul {
+  width: 1248px;
+  margin: 0 auto;
+}
+#mz-phone .mz-phone-box ul li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#mz-phone .mz-phone-box ul li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#mz-phone .mz-phone-box ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+#mz-phone .mz-phone-box ul li a .p-wrap {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#mz-phone .mz-phone-box ul .mz-big {
+  width: 615px;
+  height: 610px;
+}
+#mz-phone .mz-phone-box ul .mz-big img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 460px;
+  margin-left: -250px;
+}
+#mz-phone .mz-phone-box ul .mz-big .p-name {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 0;
+  display: block;
+  line-height: 41.6px;
+}
+#mz-phone .mz-phone-box ul .mz-big .p-adv {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 3px;
+  line-height: 26.4px;
+  display: block;
+}
+#mz-phone .mz-phone-box ul .mz-big .p-pay {
+  position: relative;
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  padding-left: 14px;
+}
+#mz-phone .mz-phone-box ul .mz-big .p-pay i {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  bottom: 3px;
+}
+#mz-phone .mz-phone-box ul .mz-small {
+  width: 303px;
+  height: 375px;
+}
+#mz-phone .mz-phone-box ul .mz-small a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#mz-phone .mz-phone-box ul .mz-small a img {
+  height: 230px;
+  margin-top: 30px;
+}
+#mz-phone .mz-phone-box ul .mz-small a .p-wrap {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#mz-phone .mz-phone-box ul .mz-small a .p-wrap .p-name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+  display: block;
+  line-height: 24px;
+}
+#mz-phone .mz-phone-box ul .mz-small a .p-wrap .p-adv {
+  color: #999;
+  font-size: 14px;
+  display: block;
+  line-height: 20.8px;
+}
+#mz-phone .mz-phone-box ul .mz-small a .p-wrap .p-pay {
+  position: relative;
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  padding-left: 14px;
+  line-height: 32.8px;
+}
+#mz-phone .mz-phone-box ul .mz-small a .p-wrap .p-pay i {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  bottom: 3px;
+}
+/**********************耳机************************/
+#mz-headset {
+  width: 1519.2px;
+}
+#mz-headset h3 {
+  height: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+#mz-headset .mz-headset-tt {
+  height: 450px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+#mz-headset .mz-headset-tt a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s linear;
+}
+#mz-headset .mz-headset-tt a:hover {
+  opacity: 0.85;
+}
+#mz-headset .mz-headset-tt a img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#mz-headset .mz-headset-box {
+  height: 1155px;
+  margin-bottom: 65px;
+}
+#mz-headset .mz-headset-box ul {
+  width: 1248px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  height: 100%;
+}
+#mz-headset .mz-headset-box ul li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#mz-headset .mz-headset-box ul li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#mz-headset .mz-headset-box ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+#mz-headset .mz-headset-box ul li a .p-wrap {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#mz-headset .mz-headset-box ul li a .p-wrap s {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #666;
+  text-decoration: line-through;
+}
+#mz-headset .mz-headset-box ul .hs-r a img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+#mz-headset .mz-headset-box ul .hs-r a .p-wrap .p-name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 0;
+  display: block;
+  line-height: 31.2px;
+}
+#mz-headset .mz-headset-box ul .hs-r a .p-wrap .p-adv {
+  color: #fff;
+  display: block;
+  line-height: 20.8px;
+}
+#mz-headset .mz-headset-box ul .hs-r a .p-wrap .p-pay {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ebce6b;
+  line-height: 36px;
+}
+#mz-headset .mz-headset-box ul .hs-r a .p-wrap .p-pay i {
+  font-size: 22px;
+  left: -6px;
+  left: -4px;
+  bottom: 1px;
+  line-height: 32.8px;
+}
+#mz-headset .mz-headset-box ul .hs-l a img {
+  height: 230px;
+  margin-top: 30px;
+}
+#mz-headset .mz-headset-box ul .hs-l a .p-name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+  display: block;
+  line-height: 24px;
+}
+#mz-headset .mz-headset-box ul .hs-l a .p-adv {
+  color: #999;
+  font-size: 13.6px;
+  display: block;
+  line-height: 20.8px;
+}
+#mz-headset .mz-headset-box ul .hs-l a .p-pay {
+  position: relative;
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  padding-left: 14px;
+  line-height: 32.8px;
+}
+#mz-headset .mz-headset-box ul .hs-l a .p-pay i {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  bottom: 3px;
+  line-height: 20.8px;
+}
+/**********************底部************************/
+#mz-footer {
+  height: 178px;
+  padding: 48px 0 20px;
+  border-top: 1px solid #f1f1f1;
+}
+#mz-footer .mz-footer-wrap {
+  height: 177px;
+  width: 1240px;
+  margin: 0 auto;
+  background-color: darkgrey;
+}
