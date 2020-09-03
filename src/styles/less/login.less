@@ -1,0 +1,332 @@
+body{
+    min-height: 800px;
+
+    // 内容
+#content{
+        position: relative;
+        
+/**********************头部************************/ 
+header{
+    height: auto;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    a{
+        float: left;
+        height: 20px;
+        width: 110px;
+        overflow: hidden;
+        display: block;
+        i{
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: url(../../images/register/logo.png) -2px -4px no-repeat;
+        }
+    }
+}
+
+/**********************主体************************/ 
+
+#banner-box{
+    position: relative;
+    min-height: 750px;
+    max-height: 1080px;
+    background: #f8fcff;
+    background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%);
+    // 背景
+    &:before {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        min-width: 1240px;
+        max-width: 1920px;
+        background: url(../../images/register/bg.png) no-repeat;
+        background-position: 50% 50%;
+    }
+    // 主体盒子
+    .bg-box{
+        position: relative;
+        width: 1240px;
+        height: 750px;
+        margin: 0 auto;
+
+/**********************登录表单************************/ 
+.main-form {
+    width: 298px;
+    position: absolute;
+    top: 17%;
+    right: 190px;
+    background-color: #FFF;
+    padding: 35px 35px 10px;
+    border-radius: 2px;
+    box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+
+    .tab-title{
+        font-size: 18px;
+        margin-bottom: 50px;
+        // margin-top: 35px;
+        width: 300px;
+        text-align: center;
+        .fg{
+            color: #B3ABAB;
+            display: inline-block;
+            border: 2px solid #B3ABAB;
+            border-left: 1px;
+            height: 10px;
+            line-height: 20px;
+            margin-right: 32px;
+            margin-left: 32px;
+        }
+        .zh{
+            color: #000000;
+        }
+        .ewm{
+            color: #7f7f7f;
+        }
+    }
+    .tip-box {
+        position: relative;
+        height: 33px;
+        display: table;
+        width: 100%;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border: solid 1px #ffc2b3;
+        background: #ffd1ca;
+        border-radius: 2px;
+        // visibility: hidden;
+        display: none;
+    }
+    .cycode-box{
+        margin-bottom: 20px !important;
+        width: 276px;
+        position: relative;
+        padding: 0px 10px;
+        height: 46px;
+        line-height: 22px;
+        font-size: 14px;
+        margin-bottom: 26px;
+        border: 1px solid #dadada;
+        outline: none;
+        color: #474747;
+        zoom: 1;
+        overflow: hidden;
+        input{
+            font-size: 14px;
+            width: 94%;
+            height: 46px; 
+            line-height: 22px;   
+            line-height: 0px;
+            line-height: 50px\0;
+        }
+        .ipt{
+            vertical-align: middle;
+            font-size: 14px;
+            margin-bottom: 0 !important;
+            border: none;
+        }
+        span{
+            width: 100%;
+            height: 20px;
+            display: inline-block;
+    }
+    }
+    .field{
+        margin-bottom: 25px;
+        height: 24px;
+        line-height: 20px;
+        label{
+            margin-right: 7px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #7f7f7f;
+         
+        }
+        .ic{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            vertical-align: middle;
+            background:url(../../images/login/checkboxon.png) ;
+            background-position: 0px -120px;
+            background-size: 100%;
+        }
+    }
+
+    .blue{
+        width: 300px;
+        display: block;
+        height: 46px;
+        font-size: 14px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        outline: none;
+        cursor: pointer;
+        background-color: #32a5e7;
+        color: #fff;
+        border-radius: 4px;
+        &:hover{
+            background-color: #3058df;
+        }
+    }
+
+    .tran{
+        margin-bottom: 5px;
+       .wj{
+           float: right;
+           color: #32a5e7;
+           font-size: 14px;
+       }
+       .zche{
+           float: left;
+           color: #32a5e7;
+           font-size: 14px;
+       }
+    }
+    
+
+
+}
+    }
+}
+
+
+}
+}
+
+
+/**********************底部************************/ 
+
+#footer{
+
+    position: static;
+    border-color: transparent !important;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    border-top: solid 1px #E5E6E7;
+    color: black;
+
+    .ft-in{
+        width: 1000px;
+        margin: 24px auto 30px;
+
+        .ft-lay{
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 12px;
+            .ft-ink{
+                float: left;
+                font-size: 16px;
+                font-size: 14px;
+                >a{
+                    color: black;
+                }
+                >img{
+                    background-color: #888;
+                    margin: 0px 5px;
+                    width: 1px;
+                    height: 10px;
+                }
+            }
+            .ft-vice{
+                float: left;
+                margin-left: 36px;
+                font-size: 14px;
+                .v1{
+                    margin-right: 10px;
+                }
+                .v2{
+                    margin-right: 20px;
+                }
+                >a{
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 18px;
+                    width: 64px;
+                    color: white;
+                    background-color: #32a5e7;
+                    text-align: center;
+                    border-radius: 2px;
+                    font-size: 14px;
+                }
+            }
+            .ft-out{
+                position: relative;
+                float: right;
+                padding-top: 9px;
+                >a{
+                    margin-left: 10px;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 32px;
+                    height: 32px;
+                    i{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                    .d-1{
+                       
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -218px -91px;
+                       &:hover{
+                        background-position: -218px -137px;
+                       }
+                    }
+
+                    .d-2{
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -302px -91px;
+                        &:hover{
+                            background-position: -302px -137px;;
+                           }
+                    }
+
+                    .d-3{
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -344px -91px;
+                        &:hover{
+                            background-position: -344px -137px;;
+                           }
+                    }
+
+                }
+
+                
+            }
+        }
+
+        .ft-right{
+            width: 100%;
+          
+            .rt-in{
+                width: 1000px;
+                margin: 0px auto;
+                span{
+                    color: #7f7f7f;
+                    float: left;
+                }
+                >a{
+                    color: #7f7f7f;
+                    &:hover{
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+    }
+}

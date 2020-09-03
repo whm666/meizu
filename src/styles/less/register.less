@@ -1,0 +1,379 @@
+body{
+    min-height: 800px;
+
+    // 内容
+#content{
+        position: relative;
+        
+/**********************头部************************/ 
+header{
+    height: auto;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    a{
+        float: left;
+        height: 20px;
+        width: 110px;
+        overflow: hidden;
+        display: block;
+        i{
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: url(../../images/register/logo.png) -2px -4px no-repeat;
+        }
+    }
+}
+
+/**********************主体************************/ 
+
+#banner-box{
+    position: relative;
+    min-height: 750px;
+    max-height: 1080px;
+    background: #f8fcff;
+    background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%);
+    // 背景
+    &:before {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        min-width: 1240px;
+        max-width: 1920px;
+        background: url(../../images/register/bg.png) no-repeat;
+        background-position: 50% 50%;
+    }
+    // 主体盒子
+    .bg-box{
+        position: relative;
+        width: 1240px;
+        height: 750px;
+        margin: 0 auto;
+
+/**********************表单************************/ 
+    #main-form{
+        width: 298px;
+        position: absolute;
+        top: 16%;
+        right: 85px;
+        background-color: #FFF;
+        padding: 72px 35px 20px;
+        border-radius: 2px;
+        box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+
+        .green{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+        .form-title{
+            font-size: 18px;
+            text-align: center;
+            a{
+                color: #387aff;
+            }
+            margin-bottom: 40px;
+        }
+
+
+    
+
+        // 输入框
+        .form-phone-box{
+            width: auto;
+            font-size: 14px;
+            display: block;
+            height: 46px;
+            line-height: 46px;
+            border: 1px solid #dadada;
+            outline: none;
+            color: #474747;
+            position: relative;
+            .form-phone{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                list-style: none;
+                width: 276px;
+                height: 45.6px;
+                .form-select{
+                    display: inline-block;
+                    width: 60px;
+                    border-right: 1px solid #DDD;
+                    cursor: pointer;
+                    padding-top: 0;
+
+                    input{
+                        line-height: 22px;
+                        height: 22px;
+                        width: 60%;
+                        color: grey;
+                        text-align: center;
+                        cursor: pointer;
+                        border-width: 2px;
+                        border-style: none;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 14px;
+                        height: 8px;
+                        background: url(../../images/register/arrow-down.png) no-repeat center;
+                    }
+                }
+
+                #phone{
+                    line-height: 20px;
+                    padding: 12px 0;
+                    height: 16px;
+                    border: none;
+                    width: 74%;
+                    text-indent: 8px;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    margin-bottom: 0 !important;
+                }
+                .phone{
+                        width: 100%;
+                        height: 20px;
+                        display: inline-block;
+                }
+            }
+        }
+
+        //密码 
+        .captcha{
+            width: 266px;
+            height: 44px;
+            border:1px solid #DDD ;
+            margin-top: 30px;
+            padding-left: 30px;
+            border-radius: 2px;
+
+           
+            
+            input{
+                margin-left: -10px;
+                border-style: none;
+                width: 100%;
+                height: 100%;
+                line-height: 44px;
+                font-size: 14px;
+                color: #666;
+            }
+            span{
+                margin-top: 15px;
+                margin-left:-30px;
+                font-size: 14px;
+                display: inline-block;
+                width: 100%;
+                height: 20px;
+            }
+        }
+
+        // 申明
+        .state{
+            font-size: 12px;
+            margin-bottom: 30px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 40px;
+            position: relative;
+            span{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+                vertical-align: middle;
+                i{
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    background: url(../../images/register/checkbox.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+                .checkboxon{
+                    background: url(../../images/register/checkboxon.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+            .linkABlue{
+                color: #387aff;
+                line-height: 20px;
+            }
+        }
+        // 注册按钮
+
+        #btnb{
+            display: block;
+            width: 298px;
+            font-size: 14px;
+            display: block;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            margin-bottom: 20px;
+            outline: none;
+            border-radius: 2px;
+            #btn{
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                border: none;
+            background-color: #387aff;
+            cursor: pointer;
+
+            }
+        }
+        
+
+        // 登录按钮
+        .login-button{
+            margin-bottom: 5px;
+            a{
+                color: #387aff;
+                font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    }
+}
+
+
+}
+}
+
+
+/**********************底部************************/ 
+
+#footer{
+
+    position: static;
+    border-color: transparent !important;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    border-top: solid 1px #E5E6E7;
+    color: black;
+
+    .ft-in{
+        width: 1000px;
+        margin: 24px auto 30px;
+
+        .ft-lay{
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 12px;
+            .ft-ink{
+                float: left;
+                font-size: 16px;
+                font-size: 14px;
+                >a{
+                    color: black;
+                }
+                >img{
+                    background-color: #888;
+                    margin: 0px 5px;
+                    width: 1px;
+                    height: 10px;
+                }
+            }
+            .ft-vice{
+                float: left;
+                margin-left: 36px;
+                font-size: 14px;
+                .v1{
+                    margin-right: 10px;
+                }
+                .v2{
+                    margin-right: 20px;
+                }
+                >a{
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 18px;
+                    width: 64px;
+                    color: white;
+                    background-color: #32a5e7;
+                    text-align: center;
+                    border-radius: 2px;
+                    font-size: 14px;
+                }
+            }
+            .ft-out{
+                position: relative;
+                float: right;
+                padding-top: 9px;
+                >a{
+                    margin-left: 10px;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 32px;
+                    height: 32px;
+                    i{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                    .d-1{
+                       
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -218px -91px;
+                       &:hover{
+                        background-position: -218px -137px;
+                       }
+                    }
+
+                    .d-2{
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -302px -91px;
+                        &:hover{
+                            background-position: -302px -137px;;
+                           }
+                    }
+
+                    .d-3{
+                        background: url(../../images/register/logo.png) no-repeat;
+                        background-position: -344px -91px;
+                        &:hover{
+                            background-position: -344px -137px;;
+                           }
+                    }
+
+                }
+
+                
+            }
+        }
+
+        .ft-right{
+            width: 100%;
+          
+            .rt-in{
+                width: 1000px;
+                margin: 0px auto;
+                span{
+                    color: #7f7f7f;
+                    float: left;
+                }
+                >a{
+                    color: #7f7f7f;
+                    &:hover{
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+    }
+}
